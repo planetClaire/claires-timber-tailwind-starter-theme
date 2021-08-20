@@ -6,6 +6,11 @@
 		"tailwindcss": "^2.2.7"
 	},
 	"scripts": {
-		"watch": "npx tailwindcss --postcss -i ./tailwind/tailwind.css -c ./tailwind/tailwind.config.js -o ./style.css --watch"
+		"watch": "npx tailwindcss --postcss -i ./tailwind/tailwind.css -c ./tailwind/tailwind.config.js -o ./style.css --watch",
+		"packagecss": "cross-env NODE_ENV=production npx tailwindcss --postcss -i ./tailwind/tailwind.css -c ./tailwind/tailwind.config.js -o ./style.css --minify",
+		"prod": "npm run packagecss"
+	},
+	"dependencies": {
+		"cross-env": "^7.0.3"
 	}
 }

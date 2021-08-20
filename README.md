@@ -1,4 +1,4 @@
-# Claire's Timber & Tailwind Starter theme
+# Claire's Timber & Tailwind Wordpress Starter theme
 
 This is the starter theme from [Timber](https://timber.github.io/docs/) with [Tailwind CSS](https://tailwindcss.com/) added as well as some ultra minimal build tooling.
 

@@ -1,5 +1,5 @@
 body {
-	@apply prose max-w-none;
+	@apply prose prose-blue max-w-none;
 }
 .blocks-gallery-item {
 	padding-left: 0 !important;
@@ -12,4 +12,68 @@ body {
 	&.is-style-wide {
 		@apply max-w-full !important;
 	}
+}
+
+.has-white-color,
+.has-white-color strong {
+	@apply text-white !important;
+}
+.has-white-background-color {
+	@apply bg-white !important;
+}
+.has-gray-color,
+.has-gray-color strong {
+	@apply text-gray-600 !important;
+}
+.has-gray-background-color {
+	@apply bg-gray-600 !important;
+}
+.has-red-color,
+.has-red-color strong {
+	@apply text-red-600 !important;
+}
+.has-red-background-color {
+	@apply bg-red-600 !important;
+}
+.has-yellow-color,
+.has-yellow-color strong {
+	@apply text-yellow-600 !important;
+}
+.has-yellow-background-color {
+	@apply bg-yellow-600 !important;
+}
+.has-green-color,
+.has-green-color strong {
+	@apply text-green-600 !important;
+}
+.has-green-background-color {
+	@apply bg-green-600 !important;
+}
+.has-blue-color,
+.has-blue-color strong {
+	@apply text-blue-600 !important;
+}
+.has-blue-background-color {
+	@apply bg-blue-600 !important;
+}
+.has-indigo-color,
+.has-indigo-color strong {
+	@apply text-indigo-600 !important;
+}
+.has-indigo-background-color {
+	@apply bg-indigo-600 !important;
+}
+.has-purple-color,
+.has-purple-color strong {
+	@apply text-purple-600 !important;
+}
+.has-purple-background-color {
+	@apply bg-purple-600 !important;
+}
+.has-pink-color,
+.has-pink-color strong {
+	@apply text-pink-600 !important;
+}
+.has-pink-background-color {
+	@apply bg-pink-600 !important;
 }

@@ -141,6 +141,55 @@ class StarterSite extends Timber\Site {
 		);
 
 		add_theme_support( 'menus' );
+
+		add_theme_support( 'editor-color-palette', array(
+			array(
+				'name' => esc_attr__( 'white', 'themeLangDomain' ),
+				'slug' => 'white',
+				'color' => '#ffffff',
+			),
+			array(
+				'name' => esc_attr__( 'gray', 'themeLangDomain' ),
+				'slug' => 'gray',
+				'color' => '#4B5563',
+			),
+			array(
+				'name' => esc_attr__( 'red', 'themeLangDomain' ),
+				'slug' => 'red',
+				'color' => '#DC2626',
+			),
+			array(
+				'name' => esc_attr__( 'yellow', 'themeLangDomain' ),
+				'slug' => 'yellow',
+				'color' => '#D97706',
+			),
+			array(
+				'name' => esc_attr__( 'green', 'themeLangDomain' ),
+				'slug' => 'green',
+				'color' => '#059669',
+			),
+			array(
+				'name' => esc_attr__( 'blue', 'themeLangDomain' ),
+				'slug' => 'blue',
+				'color' => '#2563EB',
+			),
+			array(
+				'name' => esc_attr__( 'indigo', 'themeLangDomain' ),
+				'slug' => 'indigo',
+				'color' => '#4F46E5',
+			),
+			array(
+				'name' => esc_attr__( 'purple', 'themeLangDomain' ),
+				'slug' => 'purple',
+				'color' => '#7C3AED',
+			),
+			array(
+				'name' => esc_attr__( 'pink', 'themeLangDomain' ),
+				'slug' => 'pink',
+				'color' => '#DB2777',
+			),
+		) );
+
 	}
 
 	/** This Would return 'foo bar!'.

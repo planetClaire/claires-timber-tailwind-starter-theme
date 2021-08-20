@@ -10,6 +10,8 @@ This is the starter theme from [Timber](https://timber.github.io/docs/) with [Ta
 ## Start developing
 
 1. `npm install`
+2. `npm run watch`
+3. Add any tailwind classes that you ONLY use in the editor to `safelist.txt`
 
 ## npm scripts
 
@@ -17,6 +19,10 @@ This is the starter theme from [Timber](https://timber.github.io/docs/) with [Ta
 
 ## Tweaks of the OOTB installations of Timber & Tailwind
 
-1. Tailwind's Typography plugin is enabled and `prose` class added to the body, this give us most of the styling that we expect from the Gutenberg editor, together with the standard block-library includes.
+1. Tailwind's Typography plugin is enabled and `prose prose-blue` classes added to the body, this give us most of the styling that we expect from the Gutenberg editor, together with the standard block-library includes.
 2. Tailwind's Nesting plugin is included for sass-like declarations in our css.
 3. `base.css` contains a very few sanity tweaks.
+
+## Colors
+
+Gutenberg's default editor has been set up with the -600 variants of Tailwind's default color palette.

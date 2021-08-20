@@ -1,0 +1,11 @@
+{
+	"devDependencies": {
+		"@tailwindcss/forms": "^0.3.3",
+		"@tailwindcss/typography": "^0.4.1",
+		"postcss-import": "^14.0.2",
+		"tailwindcss": "^2.2.7"
+	},
+	"scripts": {
+		"watch": "npx tailwindcss --postcss -i ./tailwind/tailwind.css -c ./tailwind/tailwind.config.js -o ./style.css --watch"
+	}
+}

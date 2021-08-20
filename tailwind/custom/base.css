@@ -1,0 +1,15 @@
+body {
+	@apply prose max-w-none;
+}
+.blocks-gallery-item {
+	padding-left: 0 !important;
+}
+.blocks-gallery-item::before {
+	content: none !important;
+}
+.wp-block-separator {
+	@apply border-b-0 max-w-xs mx-auto text-gray-300 !important;
+	&.is-style-wide {
+		@apply max-w-full !important;
+	}
+}

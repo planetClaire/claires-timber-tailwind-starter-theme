@@ -65,6 +65,7 @@ class StarterSite extends Timber\Site {
 		add_filter( 'timber/twig', array( $this, 'add_to_twig' ) );
 		add_action( 'init', array( $this, 'register_post_types' ) );
 		add_action( 'init', array( $this, 'register_taxonomies' ) );
+		add_action( 'init', array( $this, 'enqueue_scripts' ) );
 		parent::__construct();
 	}
 	/** This is where you can register custom post types. */
@@ -76,6 +77,15 @@ class StarterSite extends Timber\Site {
 
 	}
 
+	function enqueue_scripts(){
+		$ext = 'development';
+		// WP_ENV constant will be defined if you make use of https://github.com/studio24/wordpress-multi-env-config
+		if (defined('WP_ENV')){
+			$ext = WP_ENV == 'development' ? 'development' : 'production.min';
+		}
+		wp_enqueue_script( 'app', get_template_directory_uri().'/js/app.'.$ext.'.js' , '', '1.0', true );
+	}
+	
 	/** This is where you add some context
 	 *
 	 * @param string $context context['this'] Being the Twig's {{ this }}.

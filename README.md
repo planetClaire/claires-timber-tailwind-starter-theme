@@ -13,9 +13,9 @@ This is the starter theme from [Timber](https://timber.github.io/docs/) with [Ta
 2. `npm run watch`
 3. Add any tailwind classes that you ONLY use in the editor to `safelist.txt`
 
-## npm scripts
+## Build for production
 
-1. `npm run watch` - for development
+1. `npm run prod` - this will package css using Tailwind's CLI and js using rollup (see Scripts note below).
 
 ## Tweaks of the OOTB installations of Timber & Tailwind
 
@@ -26,3 +26,9 @@ This is the starter theme from [Timber](https://timber.github.io/docs/) with [Ta
 ## Colors
 
 Gutenberg's default editor has been set up with the -600 variants of Tailwind's default color palette.
+
+## Scripts
+
+Inevitably you are going to want some scripts to go with your theme. There is a starter js file in `/js/app.js`. It doesn't do anything and if you don't want it, just disable enqueuing of the script in `functions.php`.
+
+If you do want to queue scripts, you might want to make use of [Studio 24 WordPress Multi-Environment Config](https://github.com/studio24/wordpress-multi-env-config) to ease dev/prod woes (see `functions.php/enqueue_scripts` for details).

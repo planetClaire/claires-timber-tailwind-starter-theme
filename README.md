@@ -3,9 +3,10 @@
 This is the starter theme from [Timber](https://timber.github.io/docs/) with [Tailwind CSS](https://tailwindcss.com/) added as well as some ultra minimal build tooling.
 
 1. Clone this theme into your wp-content/themes folder, using a folder name that makes sense to you
-2. Install the Timber plugin [Timber Library](https://wordpress.org/plugins/timber-library/)
-3. Activate the theme
-4. Optionally import the `sample-page.xml` page included in this repo which includes a more extended sample of HTML to test with (see a screenshot at the bottom of this page). 
+2. run `npm run prod` from the theme folder
+3. Install the Timber plugin [Timber Library](https://wordpress.org/plugins/timber-library/)
+4. Activate the theme
+5. Optionally import the `sample-page.xml` page included in this repo which includes a more extended sample of HTML to test with (see a screenshot at the bottom of this page). 
 
 ## Start developing
 

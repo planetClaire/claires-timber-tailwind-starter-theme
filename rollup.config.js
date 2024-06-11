@@ -1,9 +1,9 @@
 import { terser } from 'rollup-plugin-terser';
 
 export default {
-	input: 'js/app.development.js',
+	input: 'assets/js/app.development.js',
 	output: {
-		file: 'js/app.production.min.js',
+		file: 'assets/js/app.production.min.js',
 		format: 'iife',
 		plugins: [terser()],
 	},

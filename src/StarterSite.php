@@ -20,6 +20,8 @@ class StarterSite extends Site
 		add_filter('timber/twig', array($this, 'add_to_twig'));
 		add_filter('timber/twig/environment/options', [$this, 'update_twig_environment_options']);
 
+		add_action( 'init', array( $this, 'enqueue_scripts' ) );
+
 		parent::__construct();
 	}
 

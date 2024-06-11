@@ -3,3 +3,5 @@ wp-content
 composer.lock
 /node_modules/*
 /style.css
+
+/assets/js/app.production.min.js

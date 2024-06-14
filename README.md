@@ -9,9 +9,8 @@ This is the starter theme from [Timber](https://timber.github.io/docs/) with [Ta
 
 ## Start developing
 
-1. `npm install`
-2. `npm run watch`
-3. Add any tailwind classes that you ONLY use in the editor to `safelist.txt`
+1. `npm run watch`
+2. Add any tailwind classes that you ONLY use in the editor to `safelist.txt`
 
 ## Build for production
 

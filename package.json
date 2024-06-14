@@ -1,12 +1,17 @@
 {
+	"name": "claires-timber-tailwind-starter-theme",
+	"version": "2.0.0",
+	"author": "Claire Botman",
+	"license": "MIT",
 	"devDependencies": {
-		"@tailwindcss/forms": "^0.3.3",
-		"@tailwindcss/typography": "^0.4.1",
+		"@rollup/plugin-terser": "^0.4.4",
+		"@tailwindcss/forms": "^0.5.7",
+		"@tailwindcss/typography": "^0.5.13",
+		"autoprefixer": "^10.4.19",
 		"cross-env": "^7.0.3",
-		"postcss-import": "^14.0.2",
-		"rollup": "^2.56.2",
-		"rollup-plugin-terser": "^7.0.2",
-		"tailwindcss": "^2.2.7"
+		"postcss-import": "^16.1.0",
+		"rollup": "^4.18.0",
+		"tailwindcss": "^3.4.4"
 	},
 	"scripts": {
 		"watch": "npx tailwindcss --postcss -i ./tailwind/tailwind.css -c ./tailwind/tailwind.config.js -o ./style.css --watch",

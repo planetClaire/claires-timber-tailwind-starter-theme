@@ -108,6 +108,55 @@ class StarterSite extends Site
 		);
 
 		add_theme_support('menus');
+
+		// customise this, see https://tailwindcss.com/docs/customizing-colors
+		add_theme_support('editor-color-palette', array(
+			array(
+				'name' => esc_attr__('white', 'themeLangDomain'),
+				'slug' => 'white',
+				'color' => '#ffffff',
+			),
+			array(
+				'name' => esc_attr__('gray', 'themeLangDomain'),
+				'slug' => 'gray',
+				'color' => '#4B5563',
+			),
+			array(
+				'name' => esc_attr__('red', 'themeLangDomain'),
+				'slug' => 'red',
+				'color' => '#DC2626',
+			),
+			array(
+				'name' => esc_attr__('amber', 'themeLangDomain'),
+				'slug' => 'amber',
+				'color' => '#D97706',
+			),
+			array(
+				'name' => esc_attr__('emerald', 'themeLangDomain'),
+				'slug' => 'emerald',
+				'color' => '#059669',
+			),
+			array(
+				'name' => esc_attr__('blue', 'themeLangDomain'),
+				'slug' => 'blue',
+				'color' => '#2563EB',
+			),
+			array(
+				'name' => esc_attr__('indigo', 'themeLangDomain'),
+				'slug' => 'indigo',
+				'color' => '#4F46E5',
+			),
+			array(
+				'name' => esc_attr__('violet', 'themeLangDomain'),
+				'slug' => 'violet',
+				'color' => '#7C3AED',
+			),
+			array(
+				'name' => esc_attr__('pink', 'themeLangDomain'),
+				'slug' => 'pink',
+				'color' => '#DB2777',
+			),
+		));
 	}
 
 	/**

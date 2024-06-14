@@ -1,12 +1,7 @@
 body {
 	@apply prose prose-blue max-w-none;
 }
-.blocks-gallery-item {
-	padding-left: 0 !important;
-}
-.blocks-gallery-item::before {
-	content: none !important;
-}
+
 .wp-block-separator {
 	@apply border-b-0 max-w-xs mx-auto text-gray-300 !important;
 	&.is-style-wide {
@@ -14,6 +9,7 @@ body {
 	}
 }
 
+/* these match the colors in functions.php */
 .has-white-color,
 .has-white-color strong {
 	@apply text-white !important;
@@ -35,19 +31,19 @@ body {
 .has-red-background-color {
 	@apply bg-red-600 !important;
 }
-.has-yellow-color,
-.has-yellow-color strong {
-	@apply text-yellow-600 !important;
+.has-amber-color,
+.has-amber-color strong {
+	@apply text-amber-600 !important;
 }
-.has-yellow-background-color {
-	@apply bg-yellow-600 !important;
+.has-amber-background-color {
+	@apply bg-amber-600 !important;
 }
-.has-green-color,
-.has-green-color strong {
-	@apply text-green-600 !important;
+.has-emerald-color,
+.has-emerald-color strong {
+	@apply text-emerald-600 !important;
 }
-.has-green-background-color {
-	@apply bg-green-600 !important;
+.has-emerald-background-color {
+	@apply bg-emerald-600 !important;
 }
 .has-blue-color,
 .has-blue-color strong {

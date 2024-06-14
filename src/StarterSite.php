@@ -20,7 +20,7 @@ class StarterSite extends Site
 		add_filter('timber/twig', array($this, 'add_to_twig'));
 		add_filter('timber/twig/environment/options', [$this, 'update_twig_environment_options']);
 
-		add_action( 'init', array( $this, 'enqueue_scripts' ) );
+		add_action('init', array($this, 'enqueue_scripts'));
 
 		parent::__construct();
 	}
@@ -153,5 +153,15 @@ class StarterSite extends Site
 		// $options['autoescape'] = true;
 
 		return $options;
+	}
+
+	function enqueue_scripts()
+	{
+		$ext = 'development';
+		// WP_ENV constant will be defined if you make use of https://github.com/studio24/wordpress-multi-env-config
+		if (defined('WP_ENV')) {
+			$ext = WP_ENV == 'development' ? 'development' : 'production.min';
+		}
+		wp_enqueue_script('app', get_template_directory_uri() . '/assets/js/app.' . $ext . '.js', '', '1.0', true);
 	}
 }
